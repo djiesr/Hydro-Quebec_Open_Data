@@ -15,7 +15,7 @@ If you didn't configure package file, follow these steps.
 homeassistant: <BR>
 packages: !include_dir_named packages/
   
-2. Download or copy the hq_open_data.yaml file in your "HA"/config/package/ folder.
+2. Download or copy the hq_open_data.yaml file in your "HA"/config/packages/ folder.
 3. Reboot HA
 4. All sensor start by "Hydro-Québec Demande" or "Hydro-Québec Production"
 
