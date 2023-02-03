@@ -1,6 +1,4 @@
 type: custom:apexcharts-card
-span:
-  start: day
 header:
   show: true
   title: ApexCharts-Card
