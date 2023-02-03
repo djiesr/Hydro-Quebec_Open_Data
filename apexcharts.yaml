@@ -1,0 +1,28 @@
+type: custom:apexcharts-card
+span:
+  start: day
+header:
+  show: true
+  title: ApexCharts-Card
+  show_states: true
+  colorize_states: true
+now:
+  show: true
+  label: Now
+series:
+  - entity: sensor.hydro_quebec_demande_totale
+    type: column
+    offset: +20min
+    show:
+      legend_value: false
+    group_by:
+      duration: 15min
+  - entity: sensor.hydro_quebec_production_total
+    type: line
+    stroke_width: 2
+    extend_to: false
+    show:
+      legend_value: false
+    offset: +100min
+    group_by:
+      duration: 15min
