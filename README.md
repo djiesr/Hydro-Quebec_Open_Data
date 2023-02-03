@@ -3,6 +3,12 @@
 Add production or consummation of electricity from Hydro-Québec to Home Assistant.
 The production is updating every hour and the consummation, every 15 minutes.
 
+But, the gap between the value and the real time can be 2 hours for the production and half a hour for the consummation.
+For a more realistic graph, you can use the Apex Charts Card to set a table with a correction for this gap.
+https://github.com/RomRider/apexcharts-card
+
+![alt text](https://github.com/djiesr/Hydro-Quebec_Open_Data/blob/main/apexcharts.png?raw=true)
+
 ## Instructions
 
 Copy the yaml file with your other package file.
