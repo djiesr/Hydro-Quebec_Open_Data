@@ -7,7 +7,7 @@ But the gap between the value and the real time can be 2 hours for the productio
 For an more realistic graph, you can use the Apex Charts Card to set a table with a correction for this gap.
 https://github.com/RomRider/apexcharts-card
 
-![alt text](https://github.com/djiesr/Hydro-Quebec_Open_Data/blob/main/apexcharts.png?raw=true)
+![image](https://user-images.githubusercontent.com/31359825/216670487-d964d539-a2d7-4c67-b0df-c38698cc6bd2.png)
 
 ## Instructions
 
