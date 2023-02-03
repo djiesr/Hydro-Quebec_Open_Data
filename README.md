@@ -24,5 +24,6 @@ packages: !include_dir_named packages/
 2. Download or copy the hq_open_data.yaml file in your "HA"/config/packages/ folder.
 3. Reboot HA
 4. All sensor start by "Hydro-Québec Demande" or "Hydro-Québec Production"
+  
+![image](https://user-images.githubusercontent.com/31359825/216670708-8f10c75a-950f-4f8e-86b8-76322bf1350f.png)
 
-![alt text](https://github.com/djiesr/Hydro-Quebec_Open_Data/blob/main/hqcode.png?raw=true)
