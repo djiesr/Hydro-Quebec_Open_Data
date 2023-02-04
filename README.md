@@ -5,7 +5,7 @@ The production is updating every hour and the consummation, every 15 minutes.
 
 ## Instructions
 
-Copy the yaml file with your other package file.
+Copy the hq_open_data.yaml file with your other package file.
 
 If you didn't configure package file, follow these steps.
 
