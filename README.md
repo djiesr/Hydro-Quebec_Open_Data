@@ -19,7 +19,7 @@ If you didn't configure packages file before, follow these steps:
 3. Reboot HA
 4. All sensor start by "Hydro-Québec Demande" or "Hydro-Québec Production"
   
-![image](https://user-images.githubusercontent.com/31359825/216670708-8f10c75a-950f-4f8e-86b8-76322bf1350f.png)
+<img width="378" alt="image" src="https://user-images.githubusercontent.com/31359825/216863968-79cf5e81-05a3-4c84-aafc-86fcb512c205.png">
 
 But the gap between the value and the real time can be 2 hours for the production and half a hour for the consummation.
 For an more realistic graph, you can use the Apex Charts Card to set a table with a correction for this gap.
@@ -27,5 +27,6 @@ https://github.com/RomRider/apexcharts-card
 
 Paste the content of apexcharts.yaml in a empty card of your dashboard.
 
-![image](https://user-images.githubusercontent.com/31359825/216670487-d964d539-a2d7-4c67-b0df-c38698cc6bd2.png)
+<img width="379" alt="image" src="https://user-images.githubusercontent.com/31359825/216863948-a3030e72-83e4-4832-97f8-f6372e48e57e.png">
+
 
