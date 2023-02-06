@@ -7,14 +7,14 @@ The production is updating every hour and the consummation, every 15 minutes.
 
 Copy the hq_open_data.yaml file with your other package file.
 
-If you didn't configure package file, follow these steps.
+If you didn't configure packages file before, follow these steps:
 
+1. Add these lines in your configuration.yaml. If you already have a line "homeassistant:", just copy the "packages" line.
 
-1. Add these lines in your configuration.yaml. If you already have a line "homeassistant:", just copy the package line.
-
-homeassistant: <BR>
-packages: !include_dir_named packages/
+> homeassistant: <BR>
+> &nbsp;&nbsp;packages: !include_dir_named packages/
   
+2. Create the "packages" folder in your "config" folder in Home Assistant.    
 2. Download or copy the hq_open_data.yaml file in your "HA"/config/packages/ folder.
 3. Reboot HA
 4. All sensor start by "Hydro-Québec Demande" or "Hydro-Québec Production"
