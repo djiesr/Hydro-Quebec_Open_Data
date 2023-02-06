@@ -1,0 +1,60 @@
+type: vertical-stack
+cards:
+  - type: horizontal-stack
+    cards:
+      - type: gauge
+        entity: sensor.hydro_quebec_demande_totale
+        name: HQ Demande Totale
+        unit: MW
+        min: 15000
+        max: 55000
+        needle: true
+        severity:
+          green: 25000
+          yellow: 35000
+          red: 45000
+      - type: gauge
+        entity: sensor.hydro_quebec_production_total
+        name: HQ Production Totale
+        needle: true
+        severity:
+          green: 25000
+          yellow: 35000
+          red: 45000
+        min: 15000
+        max: 55000
+        unit: MW
+  - type: horizontal-stack
+    cards:
+      - hours_to_show: 24
+        graph: line
+        type: sensor
+        entity: sensor.hydro_quebec_production_hydraulique
+        detail: 1
+        name: Hydraulique
+      - hours_to_show: 24
+        graph: line
+        type: sensor
+        entity: sensor.hydro_quebec_production_eolien
+        detail: 1
+        name: Éolien
+  - type: horizontal-stack
+    cards:
+      - hours_to_show: 24
+        graph: line
+        type: sensor
+        entity: sensor.hydro_quebec_production_solaire
+        detail: 1
+        name: Solaire
+      - hours_to_show: 24
+        graph: line
+        type: sensor
+        entity: sensor.hydro_quebec_production_thermique
+        detail: 1
+        name: Thermique
+      - hours_to_show: 24
+        graph: line
+        type: sensor
+        entity: sensor.hydro_quebec_production_autres
+        detail: 1
+        name: Autres
