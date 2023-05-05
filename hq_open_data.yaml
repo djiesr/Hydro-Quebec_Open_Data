@@ -3,6 +3,7 @@ sensor:
     name: Hydro-Québec Demande Totale
     resource: https://www.hydroquebec.com/data/documents-donnees/donnees-ouvertes/json/demande.json
     value_template: '{{ value_json.details[value_json.indexDonneePlusRecent].valeurs.demandeTotal }}'
+    ssl_cipher_list: intermediate
     unit_of_measurement: 'MW'
     device_class: power
     scan_interval: 900
@@ -10,6 +11,7 @@ sensor:
 rest:
   - resource: https://www.hydroquebec.com/data/documents-donnees/donnees-ouvertes/json/production.json
     scan_interval: 3600 
+    ssl_cipher_list: intermediate
     sensor:
       - name: "Hydro-Québec production total"
         value_template: '{{ value_json.details[value_json.indexDonneePlusRecent].valeurs.total }}'
