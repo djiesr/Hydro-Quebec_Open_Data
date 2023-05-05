@@ -31,7 +31,7 @@ rest:
         value_template: '{{ value_json.details[value_json.indexDonneePlusRecent].valeurs.solaire }}'
         device_class: power
         unit_of_measurement: "MW"
-      - name: "Hydro-Québec production thermique"
-        value_template: '{{ value_json.details[value_json.indexDonneePlusRecent].valeurs.thermique }}'
-        device_class: power
-        unit_of_measurement: "MW"
+#      - name: "Hydro-Québec production thermique"
+#        value_template: '{{ value_json.details[value_json.indexDonneePlusRecent].valeurs.thermique }}'
+#        device_class: power
+#        unit_of_measurement: "MW"
