@@ -2,7 +2,7 @@ sensor:
   - platform: rest
     name: Hydro-Québec Demande Totale
     resource: https://www.hydroquebec.com/data/documents-donnees/donnees-ouvertes/json/demande.json
-    value_template: '{{ value_json.details[value_json.indexDonneePlusRecent].valeurs.demandeTotal }}'
+    value_template: '{{ value_json.details[value_json.indexDonneePlusRecent].valeurs.demandeTotal | round(0) }}'
     ssl_cipher_list: intermediate
     unit_of_measurement: 'MW'
     device_class: power
@@ -10,27 +10,28 @@ sensor:
 
 rest:
   - resource: https://www.hydroquebec.com/data/documents-donnees/donnees-ouvertes/json/production.json
-    scan_interval: 3600 
+    scan_interval: 3600
     ssl_cipher_list: intermediate
+
     sensor:
       - name: "Hydro-Québec production total"
-        value_template: '{{ value_json.details[value_json.indexDonneePlusRecent].valeurs.total }}'
+        value_template: '{{ value_json.details[value_json.indexDonneePlusRecent].valeurs.total | round(0) }}'
         device_class: power
         unit_of_measurement: "MW"
       - name: "Hydro-Québec production hydraulique"
-        value_template: '{{ value_json.details[value_json.indexDonneePlusRecent].valeurs.hydraulique }}'
+        value_template: '{{ value_json.details[value_json.indexDonneePlusRecent].valeurs.hydraulique | round(0) }}'
         device_class: power
         unit_of_measurement: "MW"
       - name: "Hydro-Québec production éolien"
-        value_template: '{{ value_json.details[value_json.indexDonneePlusRecent].valeurs.eolien }}'
+        value_template: '{{ value_json.details[value_json.indexDonneePlusRecent].valeurs.eolien | round(0) }}'
         device_class: power
         unit_of_measurement: "MW"
       - name: "Hydro-Québec production autres"
-        value_template: '{{ value_json.details[value_json.indexDonneePlusRecent].valeurs.autres }}'
+        value_template: '{{ value_json.details[value_json.indexDonneePlusRecent].valeurs.autres | round(0) }}'
         device_class: power
         unit_of_measurement: "MW"
       - name: "Hydro-Québec production solaire"
-        value_template: '{{ value_json.details[value_json.indexDonneePlusRecent].valeurs.solaire }}'
+        value_template: '{{ value_json.details[value_json.indexDonneePlusRecent].valeurs.solaire | round(0) }}'
         device_class: power
         unit_of_measurement: "MW"
 #     Patch to compensate for the thermal source offset.
