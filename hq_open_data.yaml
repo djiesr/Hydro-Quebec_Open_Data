@@ -36,6 +36,6 @@ rest:
         unit_of_measurement: "MW"
 #     Patch to compensate for the thermal source offset.
       - name: "Hydro-Québec production thermique"
-        value_template: '{{ value_json.details[(value_json.indexDonneePlusRecent - 5)].valeurs.thermique }}'
+        value_template: '{{ value_json.details[(value_json.indexDonneePlusRecent - 5)].valeurs.thermique | round(0) }}'
         device_class: power
         unit_of_measurement: "MW"
